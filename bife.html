@@ -1,106 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bife</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: indigo;
-        }
-        
-        li {
-          float: left;
-          border-right:1px solid #bbb;
-          font-family: sans-serif;
-        }
-        
-        li:last-child {
-          border-right: none;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-          background-color: green;
-        }
-        
-        .active {
-          background-color: #04AA6D;
-        }
-        </style>
-</head>
-<hr>
-<nav>
-   <ul>
-    <li>
-      <a href="index.html">Pocetna</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Bootcamp</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="klisura.html" class="navbar-brand">Klisura</a>
 
-   </li>
-   <li>
-       <a href="klisura.html">Klisura</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    </li>
-    <li>
-      <a href="korvin_grad.html">Korvin grad</a>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="korvin_grad.html" class="nav-link">Korvin Grad</a>
+            </li>
+            <li class="nav-item">
+              <a href="zavarivac.html" class="nav-link">FK Zavarivac</a>
+            </li>
+            <li class="nav-item">
+              <a href="crkva.html" class="nav-link">Crkva</a>
+            </li>
+            <li class="nav-item">
+                <a href="kavezi.html" class="nav-link">Kavezi</a>
+              </li>
+              <li class="nav-item">
+                <a href="bife.html" class="nav-link">Bife</a>
+              </li>  
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-   </li>
-   <li>
-    <a href="crkva.html">Crkva</a>
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1><span class="text-warning"> Bife </span></h1>
+            <p class="lead my-4">
+              Imali su svoj bife koji je bio u prizemlju stare skole. Tu su se okupljali pre  i posle utakmice  i u vecernjim satima na casicu razgovora. Nije bilo bogzna kako uredjeno, koristili su skolske stolove  i stolice.Prostorija je zidana od kamena , tako da je leti hladovina a zimi im manje treba ogrev, a i od alkohola se zagreju, pa im netreba  grejanje
+            </p>
+           
+          </div>
+          <img
+            class="img-fluid w-750   d-sm-block"
+            src="bife_02.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
 
- </li>
-    <li>
-        <a href="zavarivac.html">FK Zavarivac</a>
+   
 
-     </li>
-     
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Spaja sa drustvom</h3>
+                <p class="card-text">
+                  Spaja obavlja svoj poslovni razgovor.
+                </p>
+                <img
+                class="img-fluid w-75   d-sm-block"
+                src="bife_01.jpg"
+                alt=""
+              />
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">Ljuba</h3>
+                <p class="card-text">
+                  Ljubina poseta iz Amerike.
+                </p>
+                <img
+                  class="img-fluid w-75   d-sm-block"
+                  src="ljuba01.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   </ul>
-</nav>
-<hr>
-<body>
 
-    <center><h1>Bife</h1></center>
-    <figure>
-      <center><img src="bife_02.jpg"
-       alt="Fudbalski klub Zavarivac"
-       width="600"
-       height="450"
-       title="Bife"></center>
-       <figcaption><center>Putko, Mrki, Gasa, Spaja, Cica, Davor, Milan</center></figcaption>
-   </figure>
-
-   <hr>
-    <p>Imali su svoj bife koji je bio u prizemlju stare skole. Tu su se okupljali pre  i posle utakmice  i u vecernjim satima na casicu razgovora. Nije bilo bogzna kako uredjeno, koristili su skolske stolove  i stolice. Prostorija je zidana od kamena , tako da je leti hladovina a zimi im manje treba ogrev, a i od alkohola se zagreju, pa im ne treba  grejanje.</p>
-
-    <hr>
     
-     <figure>
-        <center><img src="bife_01.jpg"
-         alt="Fudbalski klub Zavarivac"
-         width="650"
-         height="450"
-         title="FK Zavarivace"></center>
-         <figcaption><center>Covek iz Kocana, Spaja, Mica i Zoran</center></figcaption>
-     </figure>
-
     
 
+ 
+    <!-- Footer -->
+<footer class="p-5 bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead">Copyright &copy; 2023 Milan Trajkovic</p>
 
-
-     <p>
-      <a href="#">Povratak na vrh</a>
-    </p>
-</body>
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </div>
+</footer>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+crossorigin="anonymous"
+></script>
+  </body>
 </html>
